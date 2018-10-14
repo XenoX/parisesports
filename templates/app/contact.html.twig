@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<p class="text-justify">
+    Vous êtes un adhérent et avez besoin d’une information ou vous êtes une institution et souhaitez en savoir plus sur les activités possible de Paris esports, 
+    le formulaire ci -dessous nous permet de nous contacter dans les plus brefs délais et nous apportons une réponse adaptée le plus rapidement possible.
+</p>
+
+{{ form_start(form) }}
+<div class="row gtr-uniform">
+    <div class="col-4 col-12-xsmall">
+        {{ form_row(form.name) }}
+    </div>
+    <div class="col-4 col-12-xsmall">
+        {{ form_row(form.firstname) }}
+    </div>
+    <div class="col-4 col-12-xsmall">
+        {{ form_row(form.organization) }}
+    </div>
+    <div class="col-6 col-12-xsmall">
+        {{ form_row(form.email) }}
+    </div>
+    <div class="col-6 col-12-xsmall">
+        {{ form_row(form.phone) }}
+    </div>        
+    <div class="col-12">
+        {{ form_row(form.subject) }}
+    </div>
+    <div class="col-12">
+        {{ form_row(form.content) }}
+    </div>
+    <div class="col-12">
+        <input type="submit" value="Envoyer" class="primary">
+    </div>
+</div>
+{{ form_end(form) }}
+
+<p class="text-justify">Vous êtes de la presse ? Vous retrouverez les ressources graphiques de Paris esports via ce lien. Les communiqués de presse sont fourni au formats en fin de chaque actualité.</p>
+{% endblock %}
