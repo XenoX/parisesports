@@ -22,6 +22,24 @@ class AppController extends AbstractController
     }
 
     /**
+     * @Route("/association")
+     * @Template
+     */
+    public function association()
+    {
+        return [];
+    }
+
+    /**
+     * @Route("/ressources")
+     * @Template
+     */
+    public function resources()
+    {
+        return [];
+    }
+
+    /**
      * @Route("/contact")
      * @Template
      */
@@ -30,15 +48,6 @@ class AppController extends AbstractController
         $form = $this->createForm(ContactType::class);
 
         return ['form' => $form->createView()];
-    }
-
-    /**
-     * @Route("/association")
-     * @Template
-     */
-    public function association()
-    {
-        return [];
     }
 
     /**

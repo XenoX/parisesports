@@ -5,6 +5,8 @@
     <title>{% block title %}Paris Esports{% endblock %}</title>
     <link rel="shortcut icon" type="image/png" href="{{ asset('images/favicon.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <noscript><link rel="stylesheet" href="{{ asset('css/noscript.css') }}"></noscript>
@@ -21,6 +23,7 @@
             <ul>
                 <li><a href="{{ path('app_app_index') }}" {{ app.request.attributes.get('_route') == 'app_app_index' ? 'class=\'active\'' }}>Accueil</a></li>
                 <li><a href="{{ path('app_app_association') }}" {{ app.request.attributes.get('_route') == 'app_app_association' ? 'class=\'active\'' }}>Association</a></li>
+                <li><a href="{{ path('app_app_resources') }}" {{ app.request.attributes.get('_route') == 'app_app_resources' ? 'class=\'active\'' }}>Ressources</a></li>
                 <li><a href="{{ path('app_app_contact') }}" {{ app.request.attributes.get('_route') == 'app_app_contact' ? 'class=\'active\'' }}>Contact</a></li>
                 <li><a href="{{ path('app_app_membership') }}" {{ app.request.attributes.get('_route') == 'app_app_membership' ? 'class=\'active\'' }}>Adhésion</a></li>
             </ul>
@@ -49,7 +52,9 @@
                     <dd><a href="mailto:bonjour@esports.paris">bonjour@esports.paris</a></dd>
                 </dl>
                 <ul class="icons">
-                    <li><a href="https://twitter.com/Paris_Esports" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://twitter.com/Paris_Esports" class="icon fa-twitter alt" target="_blank"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/ParisEsports/" class="icon fa-facebook alt" target="_blank"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/paris_esports/" class="icon fa-instagram alt" target="_blank"><span class="label">Instagram</span></a></li>
                 </ul>
             </section>
             <p class="copyright">Paris esports &copy; Tous droits réservés.</p>

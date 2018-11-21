@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<p class="text-justify">L’association à été crée le 13/07/2018 et son numéro de publication au Journal Officiel est ######## Vous pouvez directement contacter le bureau de l’association sur la page contact.</p>
+<p class="text-justify">L’association à été crée le 13/07/2018 et son numéro de publication au Journal Officiel est W751246325 Vous pouvez directement contacter le bureau de l’association sur la page contact.</p>
 <p class="text-justify">L'association poursuit ses buts à travers quatre actions :</p>
 <ul>
     <li class="text-justify">Fédérer les joueurs, spectateurs et organisations actives dans l’esport de Paris et d’Île-de-France. Offrir une interface entre ceux-ci et les institutions publiques.</li>
@@ -10,21 +10,59 @@
     <li class="text-justify">Organiser et soutenir les événements.</li>
 </ul>
 
-<ul class="features">
-    <li>
-        <span class="icon major style1 fa-code"></span>
-        <h3>Ipsum consequat</h3>
-        <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-    </li>
-    <li>
-        <span class="icon major style3 fa-copy"></span>
-        <h3>Amed sed feugiat</h3>
-        <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-    </li>
-    <li>
-        <span class="icon major style5 fa-diamond"></span>
-        <h3>Dolor nullam</h3>
-        <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-    </li>
-</ul>
+<div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img src="{{ asset('images/photos/ludwig.jpg') }}" alt="ludwig" class="img-circle img-thumbnail img-responsive">
+        <h3 class="text-center">Ludwig Plassiard-Minet</h3>
+        <p class="text-center" style="margin-bottom: 0.5em;"><i>Président</i></p>
+        <div class="align-center" style="margin-bottom:30px;">
+            <a href="https://twitter.com/kadekah" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/ludwig-plassiard-minet/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img src="{{ asset('images/photos/baptiste.jpg') }}" alt="baptiste" class="img-circle img-thumbnail img-responsive">
+        <h3 class="text-center">Baptiste Branget</h3>
+        <p class="text-center" style="margin-bottom: 0.5em;"><i>Vice-président</i></p>
+        <div class="align-center" style="margin-bottom:30px;">
+            <a href="https://twitter.com/BrangetBaptiste" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img src="{{ asset('images/photos/paul.jpg') }}" alt="paul" class="img-circle img-thumbnail img-responsive">
+        <h3 class="text-center">Paul Arrivé</h3>
+        <p class="text-center" style="margin-bottom: 0.5em;"><i>Vice-président</i></p>
+        <div class="align-center" style="margin-bottom:30px;">
+            <a href="https://twitter.com/Paul_Dejala" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/paul-arriv%C3%A9-1b698180/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img src="{{ asset('images/photos/wadie.jpg') }}" alt="wadie" class="img-circle img-thumbnail img-responsive">
+        <h3 class="text-center">Wadie Ibani</h3>
+        <p class="text-center" style="margin-bottom: 0.5em;"><i>Vice-président</i></p>
+        <div class="align-center" style="margin-bottom:30px;">
+            <a href="https://twitter.com/wibano" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/wadie-ibani-60726bb3/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img src="{{ asset('images/photos/brice.jpg') }}" alt="brice" class="img-circle img-thumbnail img-responsive">
+        <h3 class="text-center">Brice Faye</h3>
+        <p class="text-center" style="margin-bottom: 0.5em;"><i>Secrétaire général</i></p>
+        <div class="align-center" style="margin-bottom:30px;">
+            <a href="https://twitter.com/Makaydo" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/brice-faye-13227479/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img src="{{ asset('images/photos/arnaud.jpg') }}" alt="arnaud" class="img-circle img-thumbnail img-responsive">
+        <h3 class="text-center">Arnaud Duval</h3>
+        <p class="text-center" style="margin-bottom: 0.5em;"><i>Trésorier</i></p>
+        <div class="align-center" style="margin-bottom:30px;">
+            <a href="https://twitter.com/A_Duval_" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/arnaud-duval/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        </div>
+    </div>
+</div>
 {% endblock %}
