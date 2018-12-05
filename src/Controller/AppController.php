@@ -58,4 +58,13 @@ class AppController extends AbstractController
     {
         return [];
     }
+
+    /**
+     * @Route("/mentions-legales")
+     * @Template
+     */
+    public function copyrights()
+    {
+        return [];
+    }
 }

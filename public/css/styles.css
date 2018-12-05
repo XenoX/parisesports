@@ -18,3 +18,7 @@ label.required:after {
 a:hover {
     text-decoration: none;
 }
+
+p a {
+    color: #3E9D68;
+}

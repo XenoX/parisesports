@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="sr-only">Mentions légales</h1>
+        <h2>MENTIONS LEGALES</h2>
+
+        <a href="https://esports.paris" target="_blank">esports.paris</a>
+        
+        <p>
+            Editeur : PARIS ESPORT (N° W751246325)<br>
+            Dont le siège social est situé 157 Boulevard Macdonald, 75019 Paris<br>
+            Pour nous contacter : <a href="{{ path('app_app_contact') }}">cliquez ici</a>
+        </p>
+
+        <p>
+            Directeur de la publication :<br>
+            PLASSIARD-MINET Ludwig
+        </p>
+
+        <p>
+            Hébergeur :<br>
+            <a href="https://heroku.com">heroku.com</a>
+        </p>
+
+        <h2>PROPRIETE INTELLECTUELLE</h2>
+        
+        <p class="text-justify">Paris esports est le propriétaire exclusif de tous les droits de propriété intellectuelle portant tant sur la structure que sur le contenu du site <a href="https://esports.paris" target="_blank">esports.paris</a></p>
+        <p class="text-justify">Toute utilisation dans un cadre professionnel ou commercial ou toute commercialisation de ce contenu auprès de tiers est interdite, sauf accord exprès de l’association PARIS ESPORTS.</p>
+        <p class="text-justify">Les marques, noms, titres, logos et images de jeux ou d’institutions sont les propriétés de leurs auteurs respectifs.</p>
+    </div>
+</div>
+{% endblock %}

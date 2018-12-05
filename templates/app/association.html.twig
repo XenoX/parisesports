@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<p class="text-justify">L’association à été crée le 13/07/2018 et son numéro de publication au Journal Officiel est W751246325 Vous pouvez directement contacter le bureau de l’association sur la page contact.</p>
-<p class="text-justify">L'association poursuit ses buts à travers quatre actions :</p>
+<p class="text-justify">L’association à été crée le 13/07/2018 et son numéro de publication au Journal Officiel est W751246325<br>Vous pouvez directement contacter le bureau de l’association sur la <a href="{{ path('app_app_contact') }}">page contact</a>.</p>
+L'association poursuit ses buts à travers quatre actions :
 <ul>
     <li class="text-justify">Fédérer les joueurs, spectateurs et organisations actives dans l’esport de Paris et d’Île-de-France. Offrir une interface entre ceux-ci et les institutions publiques.</li>
     <li class="text-justify">Responsabiliser et éduquer : Sensibiliser par un usage du jeu responsable et une éthique esportive empreinte de respect. Lutter contre forme de stigmatisation et marginalisation.</li>
@@ -65,4 +65,12 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block stylesheets %}
+<style>
+    h3 {
+        margin-bottom:5px;
+    }
+</style>
 {% endblock %}
